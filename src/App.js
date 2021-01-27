@@ -10,10 +10,11 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 const App = () => {
   return (
+    
     <BrowserRouter>
     <div className ="App">
       <Switch>
-        <Route path='/' component = {Home} />
+        <Route path='/' component = {Home} exact/>
         <Route path='/Focus' component= {Focus} />
         <Route path='/Sleep' component= {Sleep} />
         <Route path='/Meditation' component= {Meditation} />
