@@ -9,8 +9,10 @@ const Breath = () =>{
         <h1>Breath</h1>
 
         <div className = "outer">
-          <div className = "inhale"><label className = "inhale-text">inhale</label></div>
-          <div className = "exhale"><label className = "exhale-text">exhale</label></div>
+          <div className = "inhale"></div>
+          <label className = "inhale-text">inhale</label>
+          <div className = "exhale"></div>
+          <label className = "exhale-text">exhale</label>
         </div>
     </div>
   );    

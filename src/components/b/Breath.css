@@ -33,7 +33,7 @@
     top: 11rem;
     left: 10rem;
 
-    animation: inhale-text 8s infinite ease-in-out backwards;
+    animation: inhale-text 8s infinite ease-in backwards;
     color: white;
     font-size: 36px;
 }
@@ -42,7 +42,7 @@
     position: absolute;
     top: 11rem;
     left: 10rem;
-    animation: exhale-text 8s infinite ease-in-out backwards ;
+    animation: exhale-text 8s infinite ease-out backwards;
     color: white;
     font-size: 36px;
 }
@@ -80,6 +80,9 @@
     0%{
         opacity: 1;
     }
+    50%{
+        opacity: 0;
+    }
     100%{
         opacity: 0;
     }
@@ -87,6 +90,10 @@
 
 @keyframes exhale-text{
     0%{
+        opacity: 0;
+    }
+
+    50%{
         opacity: 0;
     }
     
