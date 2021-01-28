@@ -1,0 +1,96 @@
+.outer{
+    position: relative;
+    top: 180px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 25rem;
+    width: 25rem;
+}
+
+.inhale, .exhale{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #846B7F;
+    border-radius: 50%;
+
+}
+
+.inhale{
+    animation: inhale 4s infinite ease-in-out backwards;
+    color: white;
+}
+
+.exhale{
+    animation: exhale 4s infinite ease-in-out backwards;
+    color: white;
+}
+
+.inhale-text{
+    position: absolute;
+    top: 11rem;
+    left: 10rem;
+
+    animation: inhale-text 8s infinite ease-in-out backwards;
+    color: white;
+    font-size: 36px;
+}
+
+.exhale-text{
+    position: absolute;
+    top: 11rem;
+    left: 10rem;
+    animation: exhale-text 8s infinite ease-in-out backwards ;
+    color: white;
+    font-size: 36px;
+}
+
+
+@keyframes inhale{
+    0%{
+        opacity: 1;
+        transform: scale(1);
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
+@keyframes exhale{
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes inhale-text{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes exhale-text{
+    0%{
+        opacity: 0;
+    }
+    
+    100%{
+        opacity: 1;
+    }
+}
