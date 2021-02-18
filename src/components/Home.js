@@ -10,10 +10,10 @@ const Home = () => {
       <NavBar />
 
       <div className="top-element">
-        <h1 className="headings">BREATHE</h1>
+        <h1 className="headings">breathe</h1>
         <hr />
 
-        <h3 className="desc">WHAT CAN I HELP YOU WITH TODAY?</h3>
+        <h3 className="desc">what can i help you with today?</h3>
 
       </div>
       <div className="option">
