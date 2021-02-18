@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import NavBar from '../NavBar'
 import Break from './Break';
 import Session from './Session';
@@ -6,6 +6,7 @@ import TimeLeft from './TimeLeft';
 
 const Focus = () => {
 
+  const audioElement = useRef(null)
   const [currentSessionType, setCurrentSessionType] = useState('Session');
   const [intervalId, setIntervalId] = useState(null);
 
@@ -45,6 +46,7 @@ const Focus = () => {
     setSessionLength(60*25);
     setBreakLength(60*5);
     setTimeLeft(60*25);
+    audioElement.current.load();
   }
 
   const isStarted = intervalId !== null;
@@ -62,6 +64,8 @@ const Focus = () => {
           if (newTimeLeft >= 0) {
             return prevTimeLeft - 1;
           }
+          //play sound when current time ends
+          audioElement.current.play();
           //switch between session and break
           if (currentSessionType === 'Session') {
             setCurrentSessionType('Break');
@@ -105,6 +109,10 @@ const Focus = () => {
         timeLeft={timeLeft} />
       
       <button onClick={handleResetButton}>Reset</button>
+
+      <audio ref={audioElement}>
+        <source src = "https://onlineclock.net/audio/options/default.mp3" type="audio/mpeg" />
+      </audio>
     
     </div>
   );
