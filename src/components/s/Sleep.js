@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import NavBar from '../NavBar';
+import moment from 'moment';
+import TimePicker from 'react-time-picker';
+
 
 class Sleep extends Component {
   constructor(props){
@@ -8,7 +11,6 @@ class Sleep extends Component {
       currentTime: '',
       alarmTime: '',
     }
-    this.setAlarmTime = this.setAlarmTime.bind(this);
   }
 
   componentDidMount(){
@@ -23,16 +25,15 @@ class Sleep extends Component {
 
   setCurrentTime(){
     this.setState({
-      currentTime: (new Date().getTime() / 1000).toFixed(0) //Date().toLocaleDateString('en-US', {hour12: false} )
+      currentTime: moment().format('hh:mm') 
     });
   }
 
-  setAlarmTime(e){
-    e.preventDefault();
-    const inputTime = e.target.value + ':00'
+  handleTimeChange = (alarmTime) => {
     this.setState({
-      alarmTime: inputTime
+      alarmTime: alarmTime
     })
+    console.log(this.alarmTime)
   }
 
   checkAlarmClock(){
@@ -58,7 +59,8 @@ class Sleep extends Component {
         <h2>{this.alarmMessage}
         </h2>
         <form>
-          <input type="time" onChange={this.setAlarmTime}></input>
+          {/* <input type="time" onChange={this.handleTimeChange}></input> */}
+          <TimePicker onChange={this.handleTimeChange} />
         </form>
       </div>
     )
