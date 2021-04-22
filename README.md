@@ -1,3 +1,5 @@
+This is a mindfullness app which has sleep timer, pomodoro timer, breathing exercise and meditation video display features. It's my first React app and most of the features are not perfect.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
