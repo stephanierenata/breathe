@@ -1,0 +1,45 @@
+.meditation-block{
+    
+    display: inline-block;
+    width: 200px;
+ 
+    margin: 10px;
+    
+    height: 200px;
+}
+
+.meditation-title{
+    
+    left: 5px;
+    top: 180px;
+    font-family: Philosopher;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 170px;
+    color: black;
+}
+
+.anxiety-block{
+    background-color: #f2cc8f;
+}
+
+.self-love-block{
+    background-color: #e07a5f;
+}
+
+.sleep-block{
+    background-color: #bee1e6;
+}
+
+.stress-block{
+    background-color: #81b29a;
+}
+
+.anger-block{
+    background-color: #9b2226;
+}
+
+.depression-block{
+    background-color: #3d405b;
+}

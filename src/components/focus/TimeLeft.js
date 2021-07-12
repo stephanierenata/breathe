@@ -1,7 +1,7 @@
 import React from 'react';
 import moment from 'moment';
 import momentDurationFormatSetup from 'moment-duration-format';
-
+import './Focus.css'
 momentDurationFormatSetup(moment);
 
 const TimeLeft = ({ breakLength, sessionLength, timerLabel, handleStartStopClick, isStarted, timeLeft }) => {
@@ -13,7 +13,7 @@ const TimeLeft = ({ breakLength, sessionLength, timerLabel, handleStartStopClick
         <div className="TimeLeft">
             <h4>Time Left for {timerLabel}</h4>
             <p>{formattedTimeLeft}</p>
-            <button onClick={handleStartStopClick}>{isStarted? 'Stop' : 'Start'}</button>
+            <button onClick={handleStartStopClick} class="start-button">{isStarted? 'Stop' : 'Start'}</button>
 
         </div>
     );

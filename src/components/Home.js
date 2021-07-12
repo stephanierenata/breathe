@@ -20,30 +20,30 @@ const Home = () => {
         <Link to="/Focus">
 
           <div className="focus-circle">
-    
+            <label className="focus-label">focus </label>
           </div>
-          <label className="focus-label">focus </label>
+          
         </Link>
 
         <Link to="/Sleep">
           <div className="sleep-circle">
-            
+            <label className="sleep-label">sleep</label>
           </div>
-          <label className="sleep-label">sleep</label>
+          
         </Link>
 
         <Link to="/Meditation">
           <div className="meditation-circle">
-            
+            <label className="meditation-label">meditation</label>
           </div>
-          <label className="meditation-label">meditation</label>
+          
         </Link>
 
         <Link to="/Breath">
           <div className="breath-circle">
-            
+            <label className="breath-label">breath</label>
           </div>
-          <label className="breath-label">breath</label>
+          
         </Link>
 
 

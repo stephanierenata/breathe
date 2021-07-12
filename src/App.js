@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
 import Home from './components/Home';
-import Focus from './components/f/Focus';
-import Sleep from './components/s/Sleep';
-import Meditation from './components/m/Meditation';
-import Breath from './components/b/Breath';
+import Focus from './components/focus/Focus';
+import Sleep from './components/sleep/Sleep';
+import Meditation from './components/meditation/Meditation';
+import Breath from './components/breath/Breath';
 
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 

@@ -3,6 +3,7 @@ import NavBar from '../NavBar'
 import Break from './Break';
 import Session from './Session';
 import TimeLeft from './TimeLeft';
+import './Focus.css';
 
 const Focus = () => {
 
@@ -108,7 +109,7 @@ const Focus = () => {
         intervalId={intervalId}
         timeLeft={timeLeft} />
       
-      <button onClick={handleResetButton}>Reset</button>
+      <button onClick={handleResetButton} class="reset-button">Reset</button>
 
       <audio ref={audioElement}>
         <source src = "https://onlineclock.net/audio/options/default.mp3" type="audio/mpeg" />

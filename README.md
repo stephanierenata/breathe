@@ -1,4 +1,17 @@
-This is a mindfullness app which has sleep timer, pomodoro timer, breathing exercise and meditation video display features. It's my first React app and most of the features are not perfect.
+This is a mindfullness app which has sleep timer, pomodoro timer, breathing exercise and meditation video display features. 
+
+# To Run the project
+
+Clone the github project
+
+In the project directory, you can run:
+
+### `npm install`
+### `npm install react-router-dom`
+### `npm start'
+
+Open the project from browser: [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
 
 # Getting Started with Create React App
 
