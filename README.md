@@ -8,7 +8,7 @@ In the project directory, you can run:
 
 ### `npm install`
 ### `npm install react-router-dom`
-### `npm start'
+### `npm start`
 
 Open the project from browser: [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
